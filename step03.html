@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+	<meta name="format-detection" content="telephone=no">
+	<title>NEXTAGE｜ネクステージ</title>
+	<link href="assets/css/bootstrap.min.css" rel="stylesheet">
+	<link href="assets/css/style.css" rel="stylesheet">	
+	
+	<style>
+	canvas#can{-ms-touch-action:none}
+	body{-ms-touch-action:none;}
+</style>
+	
+</head>
+<body onload="mam_draw_init();">
+
+<header>
+	<div class="container">
+		<div class="hdCmn">
+			<h1><img src="assets/img/logo.png" alt="NEXTAGE｜ネクステージ"></h1>
+		</div>
+	</div>
+	<div class="nav-wrp" id="step-nav">
+		<div class="container">
+			<ul>
+				<li>契約内容<br/>ご確認</li>
+				<li>約款<br/>ご確認</li>
+				<li class="current">契約<br/>サイン</li>
+				<li>完了</li>
+			</ul>
+		</div>
+	</div>
+</header>
+
+<main>
+	<div class="container">
+		<div class="mainContent">
+			<div class="intro">
+				<p>画面に手書きにて、契約者本人の契約サインをお願いします。</p>
+			</div>
+			<div class="sign">
+				<h2>ご署名（サイン）</h2>
+				<p>私は、契約約款の説明を受け、確認し、承諾します。</p>
+				<p>又、約款第8条第5項第10号に記載された反社会的勢力に該当しないことを表明保証します。</p>
+				<p>リサイクル預託金相当額について説明を受け、承諾のうえ、契約します</p>
+				<div class="signBox">
+					<div class="canvas_wrp" id="can_wrp">
+						 <canvas id="can">図形を表示するには、canvasタグをサポートしたブラウザが必要です。</canvas>
+					</div>
+					<div class="sign_clear">
+						<button onClick="clearCan();" class="btn back">クリア</button>
+					</div>
+					<p>※マウス/トラックパッドでも書くことができます。</p>
+				</div>
+			</div>
+			<div class="btnBox">
+				<a href="step04.html" class="btn inactive" id="next_page">契約完了</a>
+				<p class="alt">署名をお書きください。</p>
+			</div>
+			<div class="btnBox">
+				<a href="step02.html" class="btn back">戻る</a>
+			</div>
+		</div>
+	</div>
+</main>
+
+<footer>
+	<div class="ft">
+		<h2 class="copy">&copy;&ensp;2020 NEXTAGE Co., Ltd.</h2>
+	</div>
+</footer>
+
+
+<script src="assets/js/jquery-3.3.1.min.js"></script>
+<script src="assets/js/settings.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,500 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/earlyaccess/notosansjp.css");
+/* -------- Base Font Family -------- */
+/* -------- Base Font Size -------- */
+/* -------- Base Color -------- */
+/* ---------------- Padding LR 80px ----------------*/
+html {
+  font-size: 100%;
+  /* 16px（16pt） */ }
+
+body {
+  background-color: #1e55a5;
+  word-wrap: break-word;
+  font-size: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-feature-settings: "palt" 1; }
+
+h1, h2, h3, h4, h5, h6, p, ul li, ol li, dl dt, dl dd, label, tr th, tr td, button, time, label, a, option {
+  font-family: "Noto Sans JP", "游ゴシック体", "YuGothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", "MS PGothic", Sans-Serif;
+  font-size: 14px;
+  letter-spacing: 0.05rem;
+  line-height: 1.5;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  color: #000;
+  list-style: none;
+  outline: 0; }
+
+ul, dl {
+  margin: 0;
+  padding: 0; }
+
+a {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  transition-property: color;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+  color: #000;
+  outline: none; }
+  a:hover {
+    cursor: pointer;
+    text-decoration: none;
+    color: #000; }
+  a:active {
+    text-decoration: none; }
+  a:focus {
+    text-decoration: none; }
+  a img {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    transition-property: opacity;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
+    opacity: 1;
+    border: none;
+    outline: none; }
+  a p {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden; }
+
+img {
+  color: #ffffff;
+  border: none; }
+
+/* -------- Boot Strap OverWrite -------- */
+.container {
+  padding-right: 20px;
+  padding-left: 20px;
+  margin-right: auto;
+  margin-left: auto; }
+  @media (min-width: 454px) {
+    .container {
+      width: 414px; } }
+  @media (max-width: 453px) {
+    .container {
+      width: 100%; } }
+
+.row {
+  line-height: 0;
+  margin-right: -10px;
+  margin-left: -10px; }
+
+.col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9 {
+  padding-right: 10px;
+  padding-left: 10px; }
+
+/* -------- //Boot Strap OverWrite -------- */
+header {
+  width: 100%;
+  height: auto;
+  float: left;
+  background-color: #fff;
+  position: relative;
+  z-index: 3; }
+
+main {
+  width: 100%;
+  height: auto;
+  float: left;
+  background-color: #fff;
+  position: relative;
+  z-index: 2; }
+
+footer {
+  width: 100%;
+  height: auto;
+  float: left;
+  background-color: #1e55a5;
+  position: relative;
+  z-index: 1; }
+
+/* -------- Header -------- */
+.hdCmn {
+  width: 100%;
+  height: auto;
+  float: left;
+  padding: 20px 0; }
+  .hdCmn h1 {
+    text-align: center; }
+    .hdCmn h1 img {
+      max-width: 260px;
+      width: 100%;
+      display: inline-block; }
+
+.nav-wrp {
+  width: 100%;
+  height: auto;
+  float: left; }
+  .nav-wrp.nav_fixed {
+    left: 0;
+    position: fixed;
+    top: 0; }
+  .nav-wrp ul {
+    width: -webkit-calc(100% + 40px);
+    width: calc(100% + 40px);
+    float: left;
+    margin-left: -20px;
+    margin-right: -20px;
+    overflow: hidden;
+    list-style: none;
+    display: table; }
+    .nav-wrp ul li {
+      position: relative;
+      display: inline-block;
+      width: 25%;
+      height: 50px;
+      margin: 0;
+      font-size: 12px;
+      background-color: #d6dce5;
+      text-align: center;
+      color: #1e55a5;
+      font-weight: 500;
+      display: table-cell;
+      vertical-align: middle;
+      padding: 0 0 0 15px;
+      line-height: 1.3; }
+      .nav-wrp ul li:first-child {
+        padding: 0; }
+      .nav-wrp ul li:last-child {
+        color: #1e55a5; }
+        .nav-wrp ul li:last-child::before {
+          content: normal; }
+        .nav-wrp ul li:last-child::after {
+          content: normal; }
+      .nav-wrp ul li.current {
+        background: #1e55a5;
+        color: white; }
+        .nav-wrp ul li.current::after {
+          border-left-color: #1e55a5; }
+      .nav-wrp ul li::before {
+        position: absolute;
+        width: 15px;
+        height: 50px;
+        top: 0;
+        right: -15px;
+        content: '';
+        z-index: 2;
+        background-image: url(../img/arrow.svg);
+        background-position: right 0px center;
+        background-size: contain;
+        background-repeat: no-repeat; }
+      .nav-wrp ul li::after {
+        position: absolute;
+        height: 50px;
+        top: 50%;
+        right: -15px;
+        margin-top: -25px;
+        content: '';
+        border-top: 25px solid transparent;
+        border-bottom: 25px solid transparent;
+        border-left: 15px solid #d6dce5;
+        z-index: 1; }
+
+/* -------- Footer -------- */
+.ft {
+  width: 100%;
+  height: auto;
+  float: left;
+  height: 60px; }
+  .ft .copy {
+    width: 100%;
+    height: auto;
+    float: left;
+    padding: 20px 0;
+    font-size: 12px;
+    text-align: center;
+    color: #fff; }
+
+/*-------------- Main -----------------*/
+.mainContent {
+  width: 100%;
+  height: auto;
+  float: left;
+  padding: 20px 0 20px 0; }
+  .mainContent p {
+    margin-bottom: 15px; }
+    .mainContent p.alt {
+      color: #d32d26;
+      margin-top: 10px;
+      margin-bottom: 0;
+      font-size: 12px; }
+  .mainContent .intro {
+    margin-bottom: 40px; }
+    .mainContent .intro p {
+      margin-bottom: 15px; }
+      .mainContent .intro p:last-of-type {
+        margin-bottom: 0; }
+  .mainContent .loginBox {
+    margin-bottom: 30px; }
+    .mainContent .loginBox h2 {
+      text-align: center;
+      font-size: 16px;
+      text-align: center;
+      margin-bottom: 20px;
+      font-weight: 600; }
+  .mainContent .contract {
+    width: 100%;
+    height: auto;
+    float: left;
+    margin-bottom: 40px; }
+    .mainContent .contract h2 {
+      width: 100%;
+      height: auto;
+      float: left;
+      text-align: center;
+      font-size: 16px;
+      padding-bottom: 20px;
+      font-weight: 600;
+      border-bottom: solid 3px #d6dce5; }
+    .mainContent .contract h3 {
+      width: 100%;
+      height: auto;
+      float: left;
+      text-align: left;
+      font-size: 14px;
+      margin-top: 20px;
+      padding-bottom: 10px;
+      font-weight: 600;
+      border-bottom: solid 1px #d6dce5; }
+    .mainContent .contract dl {
+      width: 100%;
+      height: auto;
+      float: left;
+      border-bottom: solid 1px #d6dce5;
+      padding: 10px 0; }
+      .mainContent .contract dl:last-of-type {
+        border-bottom: solid 4px #d6dce5; }
+      .mainContent .contract dl dt {
+        float: left;
+        width: 160px;
+        padding-right: 15px;
+        font-weight: 500;
+        font-size: 13px; }
+      .mainContent .contract dl dd {
+        float: left;
+        width: -webkit-calc(100% - 160px);
+        width: calc(100% - 160px);
+        font-size: 13px; }
+  .mainContent .approval01 {
+    width: -webkit-calc(100% + 40px);
+    width: calc(100% + 40px);
+    float: left;
+    margin-bottom: 40px;
+    margin-left: -20px;
+    margin-right: -20px;
+    background-color: #f1f1f1;
+    padding: 20px; }
+    .mainContent .approval01 h2 {
+      width: 100%;
+      height: auto;
+      float: left;
+      text-align: center;
+      font-size: 16px;
+      padding-bottom: 20px;
+      font-weight: 600; }
+    .mainContent .approval01 p {
+      margin-bottom: 20px;
+      color: #d32d26; }
+    .mainContent .approval01 .inputBox {
+      margin-top: 20px; }
+  .mainContent .approval02 {
+    width: 100%;
+    height: auto;
+    float: left;
+    margin-bottom: 40px; }
+  .mainContent .agreementBox01 {
+    background-color: #f1f1f1;
+    padding: 20px;
+    border-radius: 8px;
+    border: solid 1px #1e55a5;
+    margin-bottom: 40px; }
+    .mainContent .agreementBox01 dl {
+      margin-bottom: 20px; }
+      .mainContent .agreementBox01 dl:last-of-type {
+        margin-bottom: 0; }
+      .mainContent .agreementBox01 dl dt {
+        font-size: 13px;
+        font-weight: 600;
+        margin-bottom: 5px;
+        color: #103465; }
+      .mainContent .agreementBox01 dl dd {
+        font-size: 12px;
+        color: #103465; }
+  .mainContent .agreementBox02 {
+    width: 100%;
+    height: auto;
+    float: left;
+    margin-bottom: 25px; }
+    .mainContent .agreementBox02 h2 {
+      width: 100%;
+      height: auto;
+      float: left;
+      text-align: center;
+      font-size: 16px;
+      padding-bottom: 20px;
+      font-weight: 600;
+      border-bottom: solid 3px #d6dce5;
+      margin-bottom: 15px; }
+    .mainContent .agreementBox02 h3 {
+      width: 100%;
+      height: auto;
+      float: left;
+      text-align: left;
+      font-size: 14px;
+      font-weight: 600;
+      margin: 5px 0 10px 0;
+      font-size: 11px; }
+    .mainContent .agreementBox02 p {
+      position: relative;
+      padding-left: 25px;
+      font-size: 11px;
+      margin-bottom: 10px; }
+      .mainContent .agreementBox02 p span {
+        position: absolute;
+        top: 0;
+        left: 0; }
+    .mainContent .agreementBox02 ul {
+      padding-left: 25px;
+      margin-bottom: 15px; }
+      .mainContent .agreementBox02 ul li {
+        position: relative;
+        padding-left: 30px;
+        font-size: 11px;
+        margin-bottom: 10px; }
+        .mainContent .agreementBox02 ul li span {
+          position: absolute;
+          top: 0;
+          left: 0; }
+  .mainContent .sign {
+    width: 100%;
+    height: auto;
+    float: left;
+    margin-bottom: 40px; }
+    .mainContent .sign h2 {
+      width: 100%;
+      height: auto;
+      float: left;
+      text-align: center;
+      font-size: 16px;
+      padding-bottom: 20px;
+      font-weight: 600;
+      border-bottom: solid 3px #d6dce5;
+      margin-bottom: 15px; }
+    .mainContent .sign .signBox {
+      width: 100%;
+      height: auto;
+      float: left;
+      margin-top: 25px; }
+      .mainContent .sign .signBox .canvas_wrp {
+        width: 100%;
+        height: 200px;
+        float: left;
+        margin-bottom: 20px;
+        position: relative; }
+        .mainContent .sign .signBox .canvas_wrp canvas {
+          border: solid 2px #ddd;
+          border-radius: 8px;
+          display: block;
+          position: absolute;
+          top: 0;
+          left: 0; }
+      .mainContent .sign .signBox .sign_clear {
+        width: 100%;
+        height: auto;
+        float: left;
+        text-align: center;
+        margin-bottom: 20px; }
+      .mainContent .sign .signBox p {
+        font-size: 12px;
+        margin-bottom: 0; }
+  .mainContent .btnBox {
+    width: 100%;
+    height: auto;
+    float: left;
+    margin-bottom: 40px;
+    text-align: center; }
+    .mainContent .btnBox p.alt {
+      text-align: left; }
+  .mainContent .linkBox {
+    width: 100%;
+    height: auto;
+    float: left;
+    margin: 20px 0 40px 0; }
+    .mainContent .linkBox .btn {
+      margin-bottom: 20px; }
+      .mainContent .linkBox .btn:last-of-type {
+        margin-bottom: 0; }
+  .mainContent input[type="text"], .mainContent input[type="tel"], .mainContent input[type="email"], .mainContent input[type="password"], .mainContent input[type="number"] {
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    padding: 0px 10px;
+    background-color: #fff;
+    border: none;
+    border-radius: 6px;
+    border: solid 1px #9faec1;
+    display: block;
+    outline: none;
+    font-family: "Noto Sans JP", "游ゴシック体", "YuGothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", "MS PGothic", Sans-Serif;
+    letter-spacing: 0.05rem;
+    font-size: 16px; }
+  .mainContent input:-moz-read-only {
+    background-color: #dedede; }
+  .mainContent input:read-only {
+    background-color: #dedede; }
+  .mainContent input[type="number"]::-webkit-outer-spin-button,
+  .mainContent input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    appearance: none; }
+  .mainContent select {
+    outline: none;
+    font-family: "Noto Sans JP", "游ゴシック体", "YuGothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", "MS PGothic", Sans-Serif;
+    letter-spacing: 0.05rem;
+    font-size: 14px; }
+  .mainContent .btn {
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    margin: 0 auto;
+    padding: 0px 10px;
+    background-color: #103465;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 16px;
+    display: inline-block;
+    outline: none; }
+    .mainContent .btn.inactive {
+      background-color: #9faec1;
+      pointer-events: none; }
+    .mainContent .btn.back {
+      border: solid 1px #9faec1;
+      background-color: #fff;
+      color: #9faec1;
+      width: 160px; }
+    .mainContent .btn.link {
+      border: solid 1px #9faec1;
+      background-color: #fff;
+      color: #9faec1; }
+  .mainContent .inputBox input {
+    float: left;
+    margin-top: 5px; }
+  .mainContent .inputBox span {
+    float: left;
+    font-size: 14px;
+    margin: 0 0 0 10px;
+    font-family: "Noto Sans JP", "游ゴシック体", "YuGothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", "MS PGothic", Sans-Serif;
+    letter-spacing: 0.05rem;
+    font-weight: 400;
+    color: #000; }
